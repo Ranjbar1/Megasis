@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 function NewsSeeAlso() {
   return (
     <>
@@ -9,25 +11,25 @@ function NewsSeeAlso() {
         <h2 className="px-2 text-3xl font-semibold dark:text-yellow-100">
           See Also
         </h2>
-        <a
+        <Link
           className="block px-2 py-4 text-lg border-b hover:bg-white hover:text-indigo-600 dark:text-yellow-50 dark:hover:bg-zinc-700 dark:hover:text-lime-200"
           href="/news/reddit-collectible-avatars-attracted-over-10m-users/"
         >
           Reddit Collectible Avatars Attracted Over 10M Users In Less Than a
           Year
-        </a>
-        <a
+        </Link>
+        <Link
           className="block px-2 py-4 text-lg border-b hover:bg-white hover:text-indigo-600 dark:text-yellow-50 dark:hover:bg-zinc-700 dark:hover:text-lime-200"
           href="/news/monaco-grand-prix-nft-tickets/"
         >
           Monaco Grand Prix Has Introduced NFT Tickets for Unique Fan Experience
-        </a>
-        <a
+        </Link>
+        <Link
           className="block px-2 py-4 text-lg border-b hover:bg-white hover:text-indigo-600 dark:text-yellow-50 dark:hover:bg-zinc-700 dark:hover:text-lime-200"
           href="/news/binance-nft-marketplace-launches-nft-loan-feature/"
         >
           Binance NFT Marketplace Launches NFT Loan Feature
-        </a>
+        </Link>
       </div>
     </>
   );

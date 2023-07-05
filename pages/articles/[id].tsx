@@ -5,6 +5,7 @@ import { useState } from 'react';
 import NextNFT from '@/components/NextNFT';
 import SeeAlso from '@/components/SeeAlso';
 import SlideBar from '@/components/SlideBar';
+import Image from 'next/image';
 
 const Article = ({ article }: any) => {
   const [popUp, setShowpopUp] = useState(false);
@@ -25,7 +26,7 @@ const Article = ({ article }: any) => {
                   height={100}
                   className="w-full h-[300px]  rounded my-4"
                 /> */}
-                <img
+                <Image
                   src={article.image}
                   alt={article.name}
                   className="w-full h-[500px]  rounded my-4"

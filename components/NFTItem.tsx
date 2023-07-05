@@ -7,7 +7,7 @@ const NftItem = ({ NFT }: any) => {
       <div className="flex  flex-wrap p-4 bg-white  my-1 md:my-0 border-gray-200 w-full border-l border-r border-b">
         <div className="w-full md:w-2/5">
           <a href="/event/ekos-genesis-art-collection/">
-            <img src={NFT.image} alt={NFT.name} />
+            <Image src={NFT.image} alt={NFT.name} />
           </a>
         </div>
         <div className="w-full px-2 py-3 md:w-3/5 md:py-5 md:px-8">

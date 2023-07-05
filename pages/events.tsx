@@ -3,6 +3,7 @@ import NavbarFilter from "@/components/NavFilter"
 import SlideBar from "@/components/SlideBar"
 import { EventsData } from "@/data/events"
 import Head from "next/head"
+import Image from "next/image"
 export default function Events(){
     return(
         <>
@@ -29,7 +30,7 @@ export default function Events(){
          ">
  <div className="w-full md:w-2/5">
  <a href="/event/thebigfoot/">
- <img className="rounded-sm" loading="lazy" src={NFT.image}/>
+ <Image className="rounded-sm" loading="lazy" src={NFT.image} alt={""}/>
  </a>
  </div>
  <div className="w-full px-2 py-3 md:w-3/5 md:py-5 md:px-8">

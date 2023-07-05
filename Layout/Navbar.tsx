@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
-import navStyles from "../../styles/Nav.module.css";
+
 import Menu from "./Menu";
 
 const Navbar = () => {

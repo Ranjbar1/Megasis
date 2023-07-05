@@ -1,5 +1,5 @@
 import Link from "next/link";
-
+import Image from "next/image";
 function NewsItem({ News }: any) {
   return (
     <>
@@ -8,7 +8,7 @@ function NewsItem({ News }: any) {
           <div className="px-2 py-4 mx-1 mb-2 bg-white border border-gray-200 rounded md:px-4 dark:bg-zinc-800 dark:border-gray-700">
             <div className="p-4">
               <div className="mb-3">
-                <img
+                <Image
                   className="rounded-sm"
                   loading="lazy"
                   src={News.image}
