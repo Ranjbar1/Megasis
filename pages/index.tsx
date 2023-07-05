@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { nfts } from "../data";
 import AllNews from "@/components/AllNews";
 import NewsStories from "@/components/NewsStories";
+import FilterNavbar from "@/components/FilterNavbar";
 export default function Home({ articles }: any) {
   return (
     <div>
@@ -19,6 +20,7 @@ export default function Home({ articles }: any) {
       </Head>
       <div className="my-12 grid lg:grid-cols-3 grid-cols-1 gap-12">
         <div className="lg:col-span-2 ">
+        <FilterNavbar pageName="Today's Drops" />
           <Marketplaces NFTs={articles} />
           <NewsStories />
           <AllNews />
