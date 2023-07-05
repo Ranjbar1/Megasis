@@ -13,7 +13,7 @@ export default function  Partners(){
 <div className="max-w-sm bg-white dark:bg-zinc-800 mb-6 md:w-1/4">
 <Link href="https://bitcourier.co.uk" className="" target="_blank">
 <div className="rounded shadow-lg overflow-hidden mx-2 border dark:border-gray-700">
-<Image className="w-full" src="/assets/images/bitcourier_.webp" alt=""/>
+<Image className="w-full"  width={100} height={100} src="/assets/images/bitcourier_.webp" alt=""/>
 <div className="px-6 py-2 content text-center">
 <div className="font-bold text-lg mb-1">
 bitcourier.co.uk
@@ -29,7 +29,7 @@ UK Cryptocurrency Media Outlet
 <div className="max-w-sm bg-white dark:bg-zinc-800 mb-6 md:w-1/4">
 <Link href="https://nftndx.io" className="" target="_blank">
 <div className="rounded shadow-lg overflow-hidden mx-2 border dark:border-gray-700">
-<Image className="w-full" src="/assets/images/nftndx_logo.webp" alt=""/>
+<Image className="w-full"  width={100} height={100} src="/assets/images/nftndx_logo.webp" alt=""/>
 <div className="px-6 py-2 content text-center">
 <div className="font-bold text-lg mb-1">
 nftndx.io
@@ -45,7 +45,7 @@ A trusted NFT explorer project
 <div className="max-w-sm bg-white dark:bg-zinc-800 mb-6 md:w-1/4">
 <Link href="https://www.brydge.network/" className="" target="_blank">
 <div className="rounded shadow-lg overflow-hidden mx-2 border dark:border-gray-700">
-<Image className="w-full" src="/assets/images/brydge_logo.webp" alt=""/>
+<Image className="w-full" width={100} height={100} src="/assets/images/brydge_logo.webp" alt=""/>
 <div className="px-6 py-2 content text-center">
 <div className="font-bold text-lg mb-1">
 brydge.network
@@ -61,7 +61,7 @@ Mint NFTs with any token on any chain
 <div className="max-w-sm bg-white dark:bg-zinc-800 mb-6 md:w-1/4">
 <Link href="https://niftykit.com/?ref=nftcalendar" className="" target="_blank">
 <div className="rounded shadow-lg overflow-hidden mx-2 border dark:border-gray-700">
-<Image className="w-full" src="/assets/images/niftykiy.png" alt=""/>
+<Image className="w-full" width={100} height={100} src="/assets/images/niftykiy.png" alt=""/>
 <div className="px-6 py-2 content text-center">
 <div className="font-bold text-lg mb-1">
 NiftyKit

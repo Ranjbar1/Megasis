@@ -12,6 +12,7 @@ today
 26
 </span>
 </Link>
+<Link href="/events" className="px-1 py-2 mr-1 text-sm font-medium leading-5 whitespace-no-wrap border-b-2 group hover:text-gray-700 hover:border-gray-300 dark:hover:text-lime-200 dark:hover:border-lime-300">
 
 <span className="px-1 py-2 mr-1 text-sm font-medium leading-5 text-indigo-600 whitespace-no-wrap border-b-2 border-indigo-500 dark:border-lime-600 dark:text-lime-500">
 upcoming
@@ -19,6 +20,7 @@ upcoming
 98
 </span>
 </span>
+</Link>
 
 <Link href="/events/ongoing/" className="px-1 py-2 mr-1 text-sm font-medium leading-5 whitespace-no-wrap border-b-2 group hover:text-gray-700 hover:border-gray-300 dark:hover:text-lime-200 dark:hover:border-lime-300">
 ongoing

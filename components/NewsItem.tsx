@@ -13,6 +13,7 @@ function NewsItem({ News }: any) {
                   loading="lazy"
                   src={News.image}
                   alt={News.name}
+                  width={400} height={300}
                 />
               </div>
 

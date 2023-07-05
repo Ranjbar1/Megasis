@@ -32,7 +32,9 @@ See in Action
 
 <Image className="  w-full inset-0 object-cover" 
 src="/assets/images/nftcalendarbot.webp" 
-alt=""/>
+alt=""
+width={100} height={100}
+/>
 </div>
 </main>
         </>

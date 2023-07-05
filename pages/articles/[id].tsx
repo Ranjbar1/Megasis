@@ -6,6 +6,7 @@ import NextNFT from '@/components/NextNFT';
 import SeeAlso from '@/components/SeeAlso';
 import SlideBar from '@/components/SlideBar';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Article = ({ article }: any) => {
   const [popUp, setShowpopUp] = useState(false);
@@ -30,6 +31,7 @@ const Article = ({ article }: any) => {
                   src={article.image}
                   alt={article.name}
                   className="w-full h-[500px]  rounded my-4"
+                  width={100} height={100}
                 />
               </div>
               <div className="px-3 pt-4 pb-2 mt-4 mb-2 border border-gray-100 rounded  bg-gray-50 dark:border-gray-700 dark:bg-zinc-800">
@@ -64,14 +66,14 @@ const Article = ({ article }: any) => {
                         <div className="absolute top-0 z-10 w-32 p-2 -mt-3 text-sm leading-tight text-white transform -translate-x-1/2 -translate-y-full bg-purple-500 rounded-lg shadow-lg dark:text-gray-300 dark:bg-slate-700">
                           Drops mint website was verified by its submitter in
                           our
-                          <a
+                          <Link
                             className="underline hover:no-underline hover:font-medium dark:text-lime-200"
                             href="https://discord.gg/nft-calendar"
                             rel="nofollow"
                             target="_blank"
                           >
                             Discord community
-                          </a>
+                          </Link>
                         </div>
                         <svg
                           className="absolute z-10 w-6 h-6 -mt-2 text-purple-500 transform -translate-x-12 -translate-y-3 fill-current stroke-current dark:text-lime-500"
@@ -96,7 +98,7 @@ const Article = ({ article }: any) => {
                   {article.date}
                 </div>
                 <div className="flex flex-wrap items-center pt-1 gap-2">
-                  <a
+                  <Link
                     href="https://tacoracers.io/"
                     className=" px-3 py-2 text-gray-900 bg-gray-300 rounded-lg hover:text-indigo-600 flex  dark:hover:text-black dark:text-lime-500 dark:bg-zinc-700 dark:hover:bg-lime-500"
                     target="_blank"
@@ -127,8 +129,8 @@ const Article = ({ article }: any) => {
                     </svg>
 
                     <span className="ml-2 ">Website</span>
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     href={article.twitter}
                     rel="nofollow"
                     target="_blank"
@@ -142,8 +144,8 @@ const Article = ({ article }: any) => {
                       <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
                     </svg>
                     <span className="ml-2">Twitter</span>
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     href="https://discord.com/invite/tacoracers"
                     rel="nofollow"
                     target="_blank"
@@ -157,8 +159,8 @@ const Article = ({ article }: any) => {
                       <path d="M20.222 0c1.406 0 2.54 1.137 2.607 2.475V24l-2.677-2.273-1.47-1.338-1.604-1.398.67 2.205H3.71c-1.402 0-2.54-1.065-2.54-2.476V2.48C1.17 1.142 2.31.003 3.715.003h16.5L20.222 0zm-6.118 5.683h-.03l-.202.2c2.073.6 3.076 1.537 3.076 1.537-1.336-.668-2.54-1.002-3.744-1.137-.87-.135-1.74-.064-2.475 0h-.2c-.47 0-1.47.2-2.81.735-.467.203-.735.336-.735.336s1.002-1.002 3.21-1.537l-.135-.135s-1.672-.064-3.477 1.27c0 0-1.805 3.144-1.805 7.02 0 0 1 1.74 3.743 1.806 0 0 .4-.533.805-1.002-1.54-.468-2.14-1.404-2.14-1.404s.134.066.335.2h.06c.03 0 .044.015.06.03v.006c.016.016.03.03.06.03.33.136.66.27.93.4.466.202 1.065.403 1.8.536.93.135 1.996.2 3.21 0 .6-.135 1.2-.267 1.8-.535.39-.2.87-.4 1.397-.737 0 0-.6.936-2.205 1.404.33.466.795 1 .795 1 2.744-.06 3.81-1.8 3.87-1.726 0-3.87-1.815-7.02-1.815-7.02-1.635-1.214-3.165-1.26-3.435-1.26l.056-.02zm.168 4.413c.703 0 1.27.6 1.27 1.335 0 .74-.57 1.34-1.27 1.34-.7 0-1.27-.6-1.27-1.334.002-.74.573-1.338 1.27-1.338zm-4.543 0c.7 0 1.266.6 1.266 1.335 0 .74-.57 1.34-1.27 1.34-.7 0-1.27-.6-1.27-1.334 0-.74.57-1.338 1.27-1.338z"></path>
                     </svg>
                     <span className="ml-2">Discord</span>
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     href=" https://wax.atomichub.io/explorer/collection/wax-mainnet/tacoracersio"
                     className=" px-3 py-2 text-gray-900 bg-gray-300 rounded-lg hover:text-indigo-600 flex  dark:hover:text-black dark:text-lime-500 dark:bg-zinc-700 dark:hover:bg-lime-500"
                     rel="nofollow"
@@ -176,7 +178,7 @@ const Article = ({ article }: any) => {
                     >
                       <path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
                     </svg>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -184,23 +186,23 @@ const Article = ({ article }: any) => {
               <div className="w-full my-1 truncate lg:w-1/3">
                 <div className="p-4 my-2 mr-0 border border-gray-100 rounded md:my-0 lg:mr-2 bg-gray-50 dark:border-gray-700 dark:bg-zinc-800">
                   <h3 className="mb-1 dark:text-yellow-100">Marketplace:</h3>
-                  <a
+                  <Link
                     href="/marketplace/wax-atomichub/"
                     className="inline-block px-3 py-2 text-gray-900 bg-gray-300 rounded-lg hover:text-indigo-600   dark:hover:text-black dark:text-lime-500 dark:bg-zinc-700 dark:hover:bg-lime-500"
                   >
                     Wax AtomicHub
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="w-full my-1 truncate lg:w-1/3">
                 <div className="p-4 my-2 border border-gray-100 rounded md:my-0 bg-gray-50 dark:border-gray-700 dark:bg-zinc-800">
                   <h3 className="mb-1 dark:text-yellow-100">Blockchain:</h3>
-                  <a
+                  <Link
                     href="/b/wax/"
                     className="inline-block px-3 py-2 text-gray-900 bg-gray-300 rounded-lg hover:text-indigo-600   dark:hover:text-black dark:text-lime-500 dark:bg-zinc-700 dark:hover:bg-lime-500"
                   >
                     WAX
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

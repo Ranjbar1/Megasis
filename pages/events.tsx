@@ -30,7 +30,7 @@ export default function Events(){
          ">
  <div className="w-full md:w-2/5">
  <a href="/event/thebigfoot/">
- <Image className="rounded-sm" loading="lazy" src={NFT.image} alt={""}/>
+ <Image className="rounded-sm" width={300} height={300} loading="lazy" src={NFT.image} alt={""}/>
  </a>
  </div>
  <div className="w-full px-2 py-3 md:w-3/5 md:py-5 md:px-8">

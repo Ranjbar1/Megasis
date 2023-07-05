@@ -6,16 +6,16 @@ const NftItem = ({ NFT }: any) => {
     <Link href={`/articles/${NFT?.id}`}>
       <div className="flex  flex-wrap p-4 bg-white  my-1 md:my-0 border-gray-200 w-full border-l border-r border-b">
         <div className="w-full md:w-2/5">
-          <a href="/event/ekos-genesis-art-collection/">
-            <Image src={NFT.image} alt={NFT.name} />
-          </a>
+          <Link href="/event/ekos-genesis-art-collection/">
+            <Image src={NFT.image} alt={NFT.name} width={400} height={300} />
+          </Link>
         </div>
         <div className="w-full px-2 py-3 md:w-3/5 md:py-5 md:px-8">
-          <a href="/event/ekos-genesis-art-collection/">
+          <Link href="/event/ekos-genesis-art-collection/">
             <h2 className="text-2xl font-bold leading-tight text-black hover:text-indigo-700 dark:text-yellow-100 dark:hover:text-lime-200">
               {NFT.name}
             </h2>
-          </a>
+          </Link>
           <div className="flex items-center justify-between md:block md:justify-start">
             <div className="py-2 text-black text-normal dark:text-yellow-50 md:text-lg">
               {NFT.date}
@@ -52,12 +52,12 @@ const NftItem = ({ NFT }: any) => {
             <p>{NFT.description.slice(0, 250)}...</p>
           </div>
           <div className="pt-4 pb-0 text-right md:pt-2 md:pb-2 md:text-left">
-            <a
+            <Link
               href="/event/ekos-genesis-art-collection/"
               className="px-4 py-4 text-sm text-gray-800 bg-gray-200 rounded dark:bg-stone-900 dark:text-gray-200 md:py-3 md:px-5 hover:bg-gray-300 hover:text-black"
             >
               Read More
-            </a>
+            </Link>
           </div>
         </div>
       </div>
